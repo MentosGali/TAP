@@ -17,7 +17,7 @@ public class Swing10 {
         JFrame frame = new JFrame("Seleccion opcion unica");
         frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
         frame.setSize(200, 200);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new FlowLayout());
         frame.setLocationRelativeTo(null);
 
