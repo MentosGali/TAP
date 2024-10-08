@@ -6,18 +6,14 @@ import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class Swing12  extends JFrame{
-   
+public class Swing12 extends JFrame {
+    // editar 122222222222222222222222222222222222222
     JTextArea textoTexto;
     JButton botonMostrar;
-JLabel texto;
+    JLabel texto;
 
-Swing12(){
+    Swing12() {
 
-
-
-}
-
-
+    }
 
 }

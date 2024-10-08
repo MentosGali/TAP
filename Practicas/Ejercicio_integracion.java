@@ -49,9 +49,10 @@ public class Ejercicio_integracion extends JFrame {
                 // Hacer todas las celdas no editable
                 return false;
             }
-
         };
 
+
+        
         taskTable = new JTable(tableModel);
         add(new JScrollPane(taskTable), BorderLayout.CENTER);
 
