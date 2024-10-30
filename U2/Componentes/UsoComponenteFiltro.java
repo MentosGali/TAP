@@ -23,7 +23,8 @@ class Autocompletar extends JPanel {
             @Override
             public void keyReleased(KeyEvent e) {
                 String input = textField.getText();
-
+                String entradaMinuscula = input.toLowerCase();
+                System.out.println(entradaMinuscula);
                 updateSuggestions(input);
             }
         });
@@ -42,9 +43,11 @@ class Autocompletar extends JPanel {
 
         listModel.clear();
         if (!entradaMinuscula.isEmpty()) {
+
             for (String suggestion : suggestions) {
-                suggestion.toLowerCase();
-                if (suggestion.startsWith(input)) {
+                String aux = suggestion.toLowerCase();
+                System.out.println(aux);
+                if (aux.startsWith(entradaMinuscula)) {
                     listModel.addElement(suggestion);
                 }
             }
@@ -52,19 +55,25 @@ class Autocompletar extends JPanel {
     }
 }
 
-public class Componente06 extends JFrame {
-    public Componente06() {
+public class UsoComponenteFiltro extends JFrame {
+
+    public UsoComponenteFiltro() {
         setTitle("Componente de Autocompletado");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
         // Lista de sugerencias
         List<String> palabras = new ArrayList<>();
-        palabras.add("Java");
-        palabras.add("JavaScript");
-        palabras.add("Python");
-        palabras.add("PHP");
-        palabras.add("C++");
+        palabras.add("Inteligencia Artificial");
+        palabras.add("Machine Learnig");
+        palabras.add("Blockchain");
+        palabras.add("Computacion Cuantica");
+        palabras.add("Internet de las cosas");
+        palabras.add("Big data");
+        palabras.add("Realidas aumentada");
+        palabras.add("Realidad virtual");
+        palabras.add("Ciberseguridad");
+        palabras.add("Edge Computing");
 
         Autocompletar autoComplete = new Autocompletar(palabras);
 
@@ -75,6 +84,6 @@ public class Componente06 extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new Componente06());
+        SwingUtilities.invokeLater(() -> new UsoComponenteFiltro());
     }
 }

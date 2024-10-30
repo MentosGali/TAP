@@ -1,4 +1,4 @@
-package U2.Carpeta;
+package U2.Componentes;
 
 import javax.swing.*;import java.awt.*;
 import java.awt.event.FocusAdapter;import java.awt.event.FocusEvent;
@@ -6,6 +6,7 @@ import java.awt.event.FocusAdapter;import java.awt.event.FocusEvent;
 class TimeInputComponent extends JPanel {
     private JTextField hoursField;    private JTextField minutesField;
     private JTextField secondsField;
+
     public TimeInputComponent() {        setLayout(new FlowLayout());
         hoursField = createTextField(2);
         minutesField = createTextField(2);        secondsField = createTextField(2);
